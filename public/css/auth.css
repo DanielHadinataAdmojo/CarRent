@@ -1,0 +1,215 @@
+.input-field input[type="text"],
+.input-field input[type="password"] {
+    width: 100%;
+    padding-left: 2.5rem; /* Keep padding for icon */
+    box-sizing: border-box; 
+    position: relative;
+}
+.login-title, .register-title {
+    font-weight: 600; 
+    margin-bottom: 2rem !important; 
+    color: grey; 
+}
+.login-page::before {
+    background-image: url('../img/5.png');
+}
+
+.auth-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* border: 2px solid red;  debug border removed */
+    z-index: -1;
+}
+.auth-body {
+    position: relative;
+    z-index: 1;
+    color: white; /* Make text white for better contrast */
+}
+.auth-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 100vh; /* Ensure full viewport height for vertical centering */
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px; /* Slightly narrower for better balance */
+    padding: 2rem;
+    margin: 1rem auto; /* Center horizontally */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.brand-logo {
+    font-weight: bold;
+    font-size: 1.5rem !important;
+}
+
+.btn-extended {
+    width: calc(100% - 1rem);
+    margin: 1rem 0.5rem;
+    border-radius: 4px;
+}
+
+.page-footer {
+    padding: 1rem 0;
+}
+
+/* Form Styles */
+.input-field {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.input-field .prefix {
+    color: #666;
+}
+
+.error-message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+.success-message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4caf50;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.auth-link a {
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.error-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+    border-radius: 4px;
+}
+
+.helper-text {
+    color: #f44336 !important;
+}
+
+/* Toast notification styling */
+.toast {
+    font-weight: 500;
+    border-radius: 4px;
+}
+@media (max-width: 600px) {
+    .auth-card {
+        padding: 1.5rem;
+        margin: 0.5rem auto;
+        max-width: 90%;
+    }
+}
+.auth-card h4, 
+.auth-card label, 
+.auth-link, 
+.auth-link a,
+.input-field .prefix {
+    color: #333 !important;
+}
+
+/* Input field background */
+.input-field input[type="text"],
+.input-field input[type="password"] {
+    width: calc(100% - 2.5rem); /* Adjust width to account for prefix icon */
+    padding-left: 2.5rem; /* Keep padding for icon */
+    box-sizing: border-box; 
+}
+
+/* Adjust icon positioning */
+.input-field .prefix {
+    left: 0.75rem; /* Adjusted for better alignment */
+    top: 1rem;
+}
+
+/* Login Page Specific Background */
+body[class="auth-body"].login-page::before {
+    background-image: url('../img/portfolio/tiga.jpg');
+}
+
+/* Register Page Specific Background */
+body[class="auth-body"].register-page::before {
+    background-image: url('../img/slider/3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Card styling to make content readable */
+.auth-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card .card-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 2rem !important;
+}
+
+nav {
+    background-color: rgba(13, 71, 161, 0.9) !important; /* semi-transparent nav */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-footer {
+    background-color: rgba(13, 71, 161, 0.9) !important;
+}
+
+/* Better contrast for text on cards */
+.auth-card h4, 
+.auth-card label, 
+.auth-link, 
+.auth-link a {
+    color: #333 !important;
+}
+
+/*Background styles for auth pages */
+.login-bg {
+    background: url('../img/portfolio/5.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.register-bg {
+    background: url('../img/portfolio/lima.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Input field focus color */
+.input-field input[type]:focus + label {
+    color: #1565c0 !important;
+}
+
+.input-field input[type]:focus {
+    border-bottom: 1px solid #1565c0 !important;
+    box-shadow: 0 1px 0 0 #1565c0 !important;
+}
